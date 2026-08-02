@@ -1,24 +1,77 @@
 aid: trellis
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/trellis.png
 name: Trellis
-description: 'Trellis is a company surfaced as a portfolio company of craft-ventures, general-catalyst,
-  qed-investors and added to the API Evangelist network as a stub for enrichment. Sector: ai. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: >-
+  Trellis (Trellis Research, Inc.) is an AI-powered state and federal trial court
+  research and litigation analytics platform founded by former litigator Nicole
+  Clark. It makes the fragmented U.S. state trial court system — plus federal,
+  appellate, supreme, and bankruptcy courts via PACER — searchable through a
+  single interface, and exposes that data programmatically through the Trellis
+  Trial Court Data API. Law firms, financial institutions, insurers, and
+  researchers use Trellis for case research, judge and ruling analytics, docket
+  monitoring with alerts, document retrieval, business development, lead
+  generation, and due diligence. API access (V2, adding federal + PACER on top of
+  V1 state coverage) is provisioned through a sales-gated free trial.
 url: https://raw.githubusercontent.com/api-evangelist/trellis/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - craft-ventures
-- general-catalyst
-- qed-investors
+x-identity-note: >-
+  The originating VC-portfolio stub also listed general-catalyst and qed-investors
+  as backers; those belong to a DIFFERENT company named Trellis (the insurtech at
+  trellisconnect.com, Series A led by QED). Only Craft Ventures is a verified
+  investor in this company, Trellis Research / trellis.law (seed + Series A).
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Ai
-apis: []
+- Legal
+- Legal Analytics
+- Court Data
+- Litigation
+- Legal Tech
+- Judicial Analytics
+- Artificial Intelligence
+apis:
+- name: Trellis Trial Court Data API
+  description: >-
+    Programmatic access to Trellis's state and federal trial court dataset: Smart
+    Search over rulings, dockets and documents; docket/case data (parties,
+    attorneys, documents, events); docket refresh; rulings; documents; judge
+    analytics; alerts; usage; and webhooks. V2 (May 2024) adds federal court and
+    PACER integration.
+  humanURL: https://trellis.law/legal-data-api
+  baseURL: https://api.trellis.law
+  tags:
+  - Legal
+  - Court Data
+  - Litigation
+  - Judicial Analytics
+  properties:
+  - type: Documentation
+    url: https://support.trellis.law/trellis-api
+  - type: APIReference
+    url: https://trellis.law/feature/trellis-trial-court-api
+  - type: Authentication
+    url: authentication/trellis-authentication.yml
+  - type: Webhooks
+    url: asyncapi/trellis-webhooks.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -27,3 +80,32 @@ maintainers:
 common:
 - type: Website
   url: https://trellis.law
+- type: DeveloperPortal
+  url: https://support.trellis.law/trellis-api
+- type: Documentation
+  url: https://support.trellis.law/trellis-api
+- type: APIReference
+  url: https://trellis.law/feature/trellis-trial-court-api
+- type: Support
+  url: https://support.trellis.law
+- type: Blog
+  url: https://blog.trellis.law
+- type: LinkedIn
+  url: https://www.linkedin.com/company/trellis-law
+- type: Authentication
+  url: authentication/trellis-authentication.yml
+- type: Webhooks
+  url: asyncapi/trellis-webhooks.yml
+- type: Lifecycle
+  url: lifecycle/trellis-lifecycle.yml
+- type: ChangeLog
+  url: changelog/trellis-changelog.yml
+- type: LLMsTxt
+  url: llms/trellis-llms.txt
+- type: DomainSecurity
+  url: security/trellis-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1

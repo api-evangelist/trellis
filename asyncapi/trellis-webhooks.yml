@@ -1,0 +1,34 @@
+generated: '2026-07-21'
+method: searched
+source: https://support.trellis.law/trellis-api
+spec_type: Webhooks
+summary: >-
+  The Trellis Trial Court Data API supports outbound webhooks so integrating
+  systems receive customized notifications instead of polling. Webhooks are
+  managed via the API and deliver events tied to a customer's alerts, monitored
+  dockets, and document orders. Event payload shapes are provided during API
+  onboarding (the reference is gated behind a sales/free-trial engagement), so
+  the catalog below captures the documented event surface, not a verbatim
+  AsyncAPI schema.
+delivery: outbound HTTP webhooks (managed via the API Webhooks endpoint)
+events:
+  - name: alert
+    description: >-
+      A saved alert matched new activity (new case, filing, or ruling matching
+      the customer's monitored search or entity criteria).
+    docs: https://support.trellis.law/trellis-api
+  - name: case_refresh
+    description: >-
+      A monitored docket/case was refreshed and new docket entries, parties,
+      attorneys, events, or documents became available.
+    docs: https://support.trellis.law/trellis-api
+  - name: document_purchase
+    description: >-
+      A requested court document purchase/order completed and the document is
+      available for retrieval.
+    docs: https://support.trellis.law/trellis-api
+notes: >-
+  No public AsyncAPI document is published; Trellis does not advertise an
+  event-streaming spec. This artifact records the documented webhook event
+  catalog only. NEVER fabricate message schemas — obtain the payload reference
+  during API onboarding to promote this to a full AsyncAPI document.

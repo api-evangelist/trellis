@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: searched
+source: https://support.trellis.law/trellis-api
+scheme: major-version
+current: v2
+docs: https://support.trellis.law/trellis-api
+entries:
+  - version: v2
+    date: '2024-05'
+    breaking: false
+    additions:
+      - Federal court data integration
+      - PACER integration
+    highlights: >-
+      API V2 introduced (May 2024). Maintains all V1 features and adds federal
+      and PACER court coverage on top of the existing state trial court data.
+  - version: v1
+    date: null
+    breaking: false
+    additions:
+      - Smart Search over rulings, dockets, and documents
+      - Docket / case data (parties, attorneys, documents, events)
+      - Docket refresh
+      - Rulings, Documents, Judges endpoints
+      - Alerts and webhooks
+    highlights: >-
+      Original Trial Court Data API covering state trial courts.
+notes: >-
+  Trellis does not publish a dated, granular changelog on its public developer
+  surface; only the V1 -> V2 milestone (May 2024) is documented. Recent-window
+  entries beyond V2 are gated behind API onboarding.

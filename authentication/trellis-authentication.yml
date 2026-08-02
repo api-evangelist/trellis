@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+source: https://support.trellis.law/trellis-api
+docs: https://support.trellis.law/trellis-api
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  oauth2_flows: []
+  notes: >-
+    Trellis authenticates API requests with issued API credentials (key-based),
+    provisioned when a customer begins a free trial via Trellis Sales. The full
+    authentication reference (exact header names, key rotation, temporary
+    client-side access keys vs. backend secret keys) is gated behind API
+    onboarding and is not published on the public developer surface.
+schemes:
+  - name: ApiKey
+    type: apiKey
+    in: header
+    description: >-
+      API-key credentials issued to Trellis API customers. Details provided
+      during onboarding.
+    sources: [https://support.trellis.law/trellis-api]
+access:
+  model: sales-gated free trial
+  contact: sales@trellis.law
+notes: >-
+  No OpenAPI/Swagger spec is published publicly, so this profile is searched
+  from docs rather than derived from a spec. There is no OAuth2 scope surface
+  documented; scopes/ is intentionally omitted.

@@ -1,0 +1,26 @@
+generated: '2026-07-21'
+method: searched
+source: https://support.trellis.law/trellis-api
+versioning:
+  scheme: major-version
+  current: v2
+  previous: v1
+  notes: >-
+    API V2 was introduced May 2024. It maintains all V1 features and adds
+    federal court and PACER integration. V1 remains documented alongside V2.
+  docs: https://support.trellis.law/trellis-api
+deprecation:
+  policy_url: null
+  sunset_header: null
+  notes: >-
+    No public deprecation policy or RFC 8594 Sunset/Deprecation header support
+    was found. V1 was not announced as deprecated when V2 shipped.
+sla:
+  url: null
+  uptime_target: null
+status_page: null
+deprecated_operations: []
+notes: >-
+  No public status page, SLA document, or deprecation policy is published on the
+  Trellis developer surface. Versioning is the only lifecycle signal documented
+  publicly; the rest is gated behind API onboarding.
