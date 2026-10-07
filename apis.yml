@@ -90,6 +90,10 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Pricing
+  url: https://trellis.law/plans
+- type: Plans
+  url: plans/trellis-plans-pricing.yml
 - url: https://blog.trellis.law/feed/
   type: BlogRSS
 - type: Website
