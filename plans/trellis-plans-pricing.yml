@@ -51,3 +51,49 @@ plans:
   included_quota: Unlimited Accounts; Flexible Limit content views; Judge Analytics; Verdicts
 rate_limit_statements:
 - Content Views Per Month 100
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - hybrid
+  - subscription
+  units:
+  - object
+  plans:
+  - name: Research
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - object
+    periods:
+    - month
+  - name: Research and Judge Analytics
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - object
+    periods:
+    - month
+  - name: Research (Annual)
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - year
+  - name: Research and Judge Analytics (Annual)
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - year
+  - name: Law Firms or Corporations
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
